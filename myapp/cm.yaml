@@ -3,4 +3,5 @@ kind: ConfigMap
 metadata: 
   name: myapp 
   data: index.html: | 
-     This is a custom app!
+   This is a test app!
+   This is line 1 <p> and this is line 2 of the multiline string!
