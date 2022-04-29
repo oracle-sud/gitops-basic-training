@@ -42,6 +42,7 @@ service:
   type: NodePort
   port: 80
   nodePort: 31700
+  externalport: 31725
 
 ingress:
   enabled: false
