@@ -2,10 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "webapp.fullname" . }}
-  annotations: 
-    link.argocd.argoproj.io/external-link: http://labs.sass.ro:{{ .Values.service.externalPort }}
   labels:
     {{- include "webapp.labels" . | nindent 4 }}
+  annotations: 
+    link.argocd.argoproj.io/external-link: http://labs.sass.ro:{{ .Values.service.externalPort }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
