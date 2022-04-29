@@ -2,6 +2,9 @@ apiVersion: v1
 kind: ConfigMap 
 metadata: 
   name: myapp 
-  data: index.html: | 
-   This is a test app!
-   This is line 1 <p> and this is line 2 of the multiline string!
+  data: index.html: |
+    <html>
+    <h1>Welcome</h1>
+    </br>
+    <h1>Hi! This is a test configmap Index file </h1>
+    </html>
